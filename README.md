@@ -6,5 +6,13 @@ Roslyn是按下vs2017+ 的f5后的核心操作，利用该核心可linq任意c#�
 
 详情请看sample
 
+
+
+
+
+
+
+
+
 ## LICENSE说明
 本项目是免费的，可随便使用。为避免口水战，本项目禁止在国内网站（如cnblogs，csdn，oschina，知乎，gitee等）上传播。
