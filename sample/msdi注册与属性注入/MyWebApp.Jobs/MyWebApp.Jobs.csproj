@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
+    <RootNamespace>MyWebApp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove=".ob\**" />
+    <EmbeddedResource Remove=".ob\**" />
+    <None Remove=".ob\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\shared\Consts.cs" Link="Consts.cs" />
+    <Compile Include="..\shared\DI_ConfigureServices\DI.MyWebApp.Jobs.cs" Link="DI.MyWebApp.Jobs.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="2.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Xml" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="2.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="2.2.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="System.Memory" Version="4.5.1" />
+    <PackageReference Include="System.IO.Pipelines" Version="4.5.2" />
+    <PackageReference Include="System.Threading.Channels" Version="4.5.0" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.1" />
+    <PackageReference Include="Quartz" Version="3.0.7" />
+    <PackageReference Include="Quartz.Jobs" Version="3.0.7" />
+    <PackageReference Include="Quartz.Plugins" Version="3.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyWebApp.Common\MyWebApp.Common.csproj" />
+    <ProjectReference Include="..\MyWebApp.DbModel\MyWebApp.DbModel.csproj" />
+    <ProjectReference Include="..\MyWebApp.Entity.Core\MyWebApp.Entity.Core.csproj" />
+    <ProjectReference Include="..\MyWebApp.Entity\MyWebApp.Entity.csproj" />
+    <ProjectReference Include="..\MyWebApp.Caches.Abstractions\MyWebApp.Caches.Abstractions.csproj" />
+    <ProjectReference Include="..\MyWebApp.Services.Abstractions\MyWebApp.Services.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="quartz_jobs.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <Import Project="../shared/MyWebApp.proj.xml" />
+
+</Project>

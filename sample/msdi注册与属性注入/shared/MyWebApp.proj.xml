@@ -1,0 +1,41 @@
+﻿<Project>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <DefineConstants>$(DefineConstants);NetCore</DefineConstants>
+    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <cpx_projs>MyWebApp;MyWebApp.Jobs;MyWebApp.Tests;</cpx_projs>
+    <plugin_projs></plugin_projs>
+  </PropertyGroup>
+
+  <ItemGroup Condition="$(cpx_projs.IndexOf('$(TargetName);')) > -1">
+    <Compile Include="..\shared\Program.shared.cs" Link="Program.shared.cs" />
+  </ItemGroup>
+  
+  <!--#region App_g_Code for rg -->
+  <ItemGroup>
+    <Compile Remove="App_g_Code\**" />
+    <Content Remove="App_g_Code\**" />
+    <EmbeddedResource Remove="App_g_Code\**" />
+    <None Remove="App_g_Code\**" />
+  </ItemGroup>
+  <Target Name="zhen_di_shi_ri_le_gou_le__PreBuild" BeforeTargets="PreBuildEvent">
+    <ItemGroup>
+      <Compile Include="App_g_Code\*.cs" />
+      <Compile Include="App_g_Code\*\*.cs" />
+    </ItemGroup>
+  </Target>
+  <!--#endregion App_g_Code for rg -->
+
+  <Target Condition="$(plugin_projs.IndexOf('$(TargetName);')) > -1" Name="PostBuild" AfterTargets="PostBuildEvent">
+    <ItemGroup>
+      <_cpxs Include="$(cpx_projs)" />
+      <dlls-to-apps Include="@(_cpxs->'..\%(Identity)\bin\$(Configuration)\$(TargetFramework)\')" />
+    </ItemGroup>
+    <Exec Command="dotnet publish -c $(Configuration) -o %(dlls-to-apps.Identity) --no-build --no-dependencies --self-contained" />
+  </Target>
+
+</Project>
