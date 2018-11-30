@@ -1,8 +1,9 @@
-´ËsampleÑİÊ¾ÈçºÎÊ¹ÓÃrg¡°ÊµÏÖ¡±ms-diµÄÊôĞÔ×¢ÈëºÍ×Ô¶¯×¢²á...
+æ­¤sampleæ¼”ç¤ºå¦‚ä½•ä½¿ç”¨rgâ€œå®ç°â€ms-diçš„å±æ€§æ³¨å…¥å’Œè‡ªåŠ¨æ³¨å†Œ...
+éœ€è¦å®‰è£….netcore host 2.1.6
 
-ÔËĞĞ './scripts/rgb.bat' Éú³ÉÏîÄ¿ÔªÊı¾İ
-ÔËĞĞ './scripts/rg.DI.bat' Éú³É½á¹û
+è¿è¡Œ './scripts/rgb.bat' ç”Ÿæˆé¡¹ç›®å…ƒæ•°æ®
+è¿è¡Œ './scripts/rg.DI.bat' ç”Ÿæˆç»“æœ
 
-²é¿´½á¹û
+æŸ¥çœ‹ç»“æœ
 .\shared\DI_ConfigureServices\DI.MyWebApp.Jobs.cs
 .\MyWebApp.Jobs\App_g_Code\
