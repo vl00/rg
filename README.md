@@ -7,7 +7,16 @@ Roslyn是按下vs2017+ 的f5后的核心操作，利用该核心可linq任意c#�
 详情请看sample目录
 
 ms di inject
-![ms di inject](https://github.com/vl00/rg/blob/master/img/rg.msdi-inject.jpg)
+![ms di inject](./img/rg.msdi-inject.jpg)
+
+redux for .net
+![redux](./img/rg.redux.jpg)
+
+
+
+
+
+
 
 
 
