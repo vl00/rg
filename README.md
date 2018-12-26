@@ -10,7 +10,7 @@ ms di inject
 ![ms di inject](./img/rg.msdi-inject.jpg)
 
 redux for .net
-![redux](./img/rg.redux.jpg)
+![redux](./img/rg.redux.png)
 
 
 
