@@ -7,3 +7,6 @@
 查看结果
 .\shared\DI_ConfigureServices\DI.MyWebApp.Jobs.cs
 .\MyWebApp.Jobs\App_g_Code\
+
+ms di inject
+![ms di inject](../../img/rg.msdi-inject.jpg)
