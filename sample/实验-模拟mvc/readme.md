@@ -1,9 +1,12 @@
 
-´ËsampleÑİÊ¾ÈçºÎÊ¹ÓÃrgÄ£Äâmvc...
-ĞèÒª°²×°.netcore host 2.1.6
+æ­¤sampleæ¼”ç¤ºå¦‚ä½•ä½¿ç”¨rgæ¨¡æ‹Ÿmvc...
+éœ€è¦å®‰è£….netcore host 2.1.6
 
-ÔËĞĞ './scripts/rgb.bat' Éú³ÉÏîÄ¿ÔªÊı¾İ
-ÔËĞĞ './scripts/rg.DI.bat' Éú³É½á¹û
+è¿è¡Œ './scripts/rgb.bat' ç”Ÿæˆé¡¹ç›®å…ƒæ•°æ®
+è¿è¡Œ './scripts/rg.DI.bat' ç”Ÿæˆç»“æœ
 
-²é¿´½á¹û
+æŸ¥çœ‹ç»“æœ
 .\TestCL.NetCore\App_g_Code\MyS.Service3\
+
+æ•ˆæœ
+![mvc](../../img/rg.mvc.jpg)
