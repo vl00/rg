@@ -4,7 +4,9 @@ Roslyn是按下vs2017+ 的f5后的核心操作，利用该核心可linq任意c#�
 该脚本能在编码后按f5前进行一些计算来生成新的代码。
 这个脚本不需要修改原项目，运行时不需要vs，只依赖.netcore。
 
-详情请看sample目录
+详情请看[sample目录](./sample)
+
+备份地址：（度盘）/s/1m5qWdeuwPHRt26Efs--B4Q#uibm 
 
 ms di inject
 ![ms di inject](./img/rg.msdi-inject.jpg)
