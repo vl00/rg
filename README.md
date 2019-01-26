@@ -6,7 +6,7 @@ Roslyn是按下vs2017+ 的f5后的核心操作，利用该核心可linq任意c#�
 
 详情请看[sample目录](./sample)
 
-备份地址：（度盘）/s/1m5qWdeuwPHRt26Efs--B4Q#uibm 
+由于网速原因，完整代码在度盘里, 地址：/s/1m5qWdeuwPHRt26Efs--B4Q#uibm 
 
 ms di inject
 ![ms di inject](./img/rg.msdi-inject.jpg)
